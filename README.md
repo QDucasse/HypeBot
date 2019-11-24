@@ -1,0 +1,59 @@
+# Data Mining & Machine Learning: Coursework 1
+
+### Installation
+
+The project was developped through a virtual environment with `virtualenvwrapper`
+and we highly recommend to do so as well. However, whether or not you are in a
+virtual environment, the installation proceeds as follows:
+
+* For downloading and installing the source code of the project:
+
+  ```bash
+    $ cd <directory you want to install to>
+    $ git clone https://github.com/QDucasse/HypeBot
+    $ python setup.py install
+  ```
+* For downloading and installing the source code of the project in a new virtual environment:  
+
+  *Download of the source code & Creation of the virtual environment*
+  ```bash
+    $ cd <directory you want to install to>
+    $ git clone https://github.com/QDucasse/HypeBot
+    $ cd dm_cw1
+    $ mkvirtualenv -a . -r requirements.txt VIRTUALENV_NAME
+  ```
+  *Launch of the environment & installation of the project*
+  ```bash
+    $ workon VIRTUALENV_NAME
+    $ pip install -e .
+  ```
+  ---
+
+### How to contribute
+
+In order to contribute, first ensure you have the latest version by:
+
+Steps to do once in the beginning:
+* Forking the project under your Github profile
+* Cloning the project on your computer as explained above
+* Setting a remote
+```bash
+  $ git remote add upstream https://github.com/QDucasse/HypeBot
+```
+
+Steps to do before beginning your work on the project:
+* Updating your local repository with the latest changes
+```bash
+  $ git fetch upstream
+  $ git checkout master
+  $ git merge upstream/master
+```
+
+Steps to do to push your changes:
+* Push the changes to your local directory
+```bash
+  $ git add <files-that-changed>
+  $ git commit -m "Commit message"
+  $ git push
+```
+* Open a pull request on `github.com/QDucasse/HypeBot`
