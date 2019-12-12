@@ -1,4 +1,4 @@
-# Data Mining & Machine Learning: Coursework 1
+# HypeBot
 
 ### Installation
 

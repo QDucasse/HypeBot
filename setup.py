@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages  # Always prefer setuptools over distutils
 from codecs import open  # To use a consistent encoding
 from os import path
-import dm_cw1
+import HypeBot
 
 here = path.abspath(path.dirname(__file__))
 
@@ -10,16 +10,16 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='dm_cw1',
-    description='Coursework1 on Data Mining & Machine Learning',
+    name='HypeBot',
+    description='Supreme Bot',
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com/QDucasse/dm_cw1',
+    url='https://github.com/QDucasse/HypeBot',
 
     # Author details
     author='Quentin Ducasse',
-    author_email='qd14@hw.ac.uk',
+    author_email='quentin.ducasse@free.for',
 
     # Choose your license
     license='MIT',
@@ -33,11 +33,6 @@ setup(
         'Development Status :: 3 - Alpha',
 
         # Indicate who your project is intended for
-        'Intended Audience :: Education',
-        'Topic :: Scientific/Engineering',
-        'Topic :: Scientific/Engineering :: Mathematics',
-        'Topic :: Scientific/Engineering :: Data Science'
-        'Topic :: Scientific/Engineering :: Machine Learning',
         'Topic :: Utilities',
 
 
@@ -46,13 +41,13 @@ setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
 
         'Operating System :: Apple :: OSX'
     ],
 
     packages=find_packages(),
 
-    install_requires=['numpy', 'matplotlib', 'pandas','sklearn','opencv-python','seaborn','image'],
+    install_requires=['selenium','requests']
 
 )
